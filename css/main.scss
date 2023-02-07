@@ -1,3 +1,91 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Mochiy+Pop+One&display=swap');
+
+// 🥚sass functions
+
+$blue : #d61319;
+$black : #333;
+$white : #fff;
+$gold : gold;
+$light-color : #666;
+$light-bg : #eee;
+
+$border : .2rem solid $black;
+$box-shadow : 0 .5rem 1rem rgba(0, 0, 0, .2);
+
+// 🍀css320
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+// 🍀css2022
+@keyframes fadeIn {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+// 
+
 *{
     background: lightgrey;
 }
+
+  
+
+.home {
+    background: $white;
+  
+  
+    .slide {
+      min-height: 40rem;
+  
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      // 🦄gap - flex에서 사용가능함
+      gap: 2rem;
+  
+      padding: 2rem 0;
+  
+      .image {
+        flex: 1 1 42rem;
+        text-align: center;
+  
+        img {
+          height: 70rem;
+        }
+      }
+  
+      .content {
+        flex: 1 1 42rem;
+  
+        span {
+          font-size: 2rem;
+          color: $blue;
+        }
+  
+        h3 {
+          padding-top: 0.5rem;
+          color: $black;
+          font-size: 3rem;
+        }
+      }
+    }
+}
+  
+  
+  
+  // 🥒js0432 - swiper 
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 3rem;
+    color: $black;
+  }
+  
